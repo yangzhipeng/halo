@@ -1,0 +1,15 @@
+title = "账号"
+url = "/account/:code?"
+layout = "default"
+description = "登录，注册和帐户管理。"
+is_hidden = 1
+
+[account]
+redirect = "account"
+paramCode = "code"
+==
+{% component 'account' %}
+
+<hr />
+
+<p><a href="{{ 'forgot-password'|page }}">Forgotten your password?</a></p>

@@ -1,0 +1,105 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 5
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[popularPosts]
+postsLimit = 6
+noPostsMessage = "No posts found"
+postPage = "blog/post"
+
+[viewBag]
+==
+<div id="leftbar">
+            <div class="left_nav_con">
+                <div class="left_nav_top">&nbsp;</div>
+
+
+            
+                    
+                        <a href="/jiandu/zonghe"
+                           class="left_nav">
+                            综合类
+                        </a>
+                    
+                        <a href="/jiandu/public"
+                           class="left_nav">
+                            公共场所
+                        </a>
+                    
+                        <a href="/jiandu/hospital"
+                           class="left_nav">
+                            医疗机构
+                        </a>
+                    
+                        <a href="/jiandu/schoolhealth"
+                           class="left_nav">
+                            学校卫生
+                        </a>
+                    
+                        <a href="/jiandu/rad_medical"
+                           class="left_nav">
+                            放射诊疗
+                        </a>
+                    
+                        <a href="/jiandu/doctor_handbook"
+                           class="left_nav">
+                            医师护士注册
+                        </a>
+                    
+                        <a href="/jiandu/other_application"
+                           class="left_nav">
+                            各类卫生许可申请表
+                        </a>
+                    
+                        <a href="/jiandu"
+                           class="left_nav">
+                            惠州卫生监督信息
+                        </a>
+                    
+            
+
+                <div class="left_nav_bot">&nbsp;</div>
+            </div>
+
+            <div class="leftbar_column">
+
+                
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>最新文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                {% component 'blogPosts' %}
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>热门文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                {% component 'popularPosts' %}
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            
+            </div>
+
+        </div>

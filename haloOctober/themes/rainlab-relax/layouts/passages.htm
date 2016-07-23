@@ -1,0 +1,54 @@
+description = "文章显示模板"
+
+[staticMenu]
+code = "client-menu"
+
+[staticPage]
+
+[blogPost]
+slug = ":slug"
+categoryPage = "blog/post"
+==
+<!DOCTYPE html>
+<html>
+<head>
+    {% partial 'hz_meta'%}
+</head>
+<body>
+
+<div id="main_con">
+        
+        {% partial 'hz_header_organ' %}
+         
+        {% partial 'hz_nav' %}
+        <div>
+             {% set hasChildren = (staticPage.parent ?: staticPage.page).children %}
+
+                <div class="content-area with-padding">
+                    {% if hasChildren %}
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="module-sidemenu">
+                                    {% partial 'sidemenu' page=staticPage.page %}
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                {% page %}
+                            </div>
+                        </div>
+                    {% else %}
+                        {% page %}
+                    {% endif %}
+                </div>
+         </div>
+ <div id="footer" style="margin-top:120px;margin-bottom:0;">
+    <div id="fline1">地址：广东省惠州市惠城区江北富民路10号惠州卫生大楼 邮编：516003 备案证编号：粤ICP备00000000 主办及维护单位：惠州市卫生监督所 </div>
+    <div id="fline2">© 2012 wsjds.huizhou.gov.cn All Rights Reserved 技术支持及意见：<span class=""><a href="mailto:support@everants.com?Subject=Comments%20On%20WSJDS%20Huizhou" style="color:#00DAFF;">support@everants.com</a>  </span> </div>
+</div>
+     
+</div>
+
+        {% partial 'hz_scripts' %}
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+description = "右边框2"
+
+[viewBag]
+
+[blogSeries]
+slug = "news"
+noPostsMessage = "No posts found"
+sortOrder = "published_at asc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<div id="l_container4">
+        <div class="column column8">
+            <div class="column_title">
+                <div class="columntil_l"><span>曝光台</span></div>
+                <div class="columntil_r"><a class="more_link" href="/notice/lighthouse"></a></div>
+            </div>
+            <div class="column_body" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+                    <ul>
+                    {% component 'blogSeries' %}
+                    </ul>
+            </div>
+            <div class="column_bottom">
+                <div class="column_bot_l">&nbsp;</div>
+                <div class="column_bot_r">&nbsp;</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="clear">&nbsp;</div>

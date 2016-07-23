@@ -1,0 +1,31 @@
+title = "Blog Category"
+url = "/blog/category/:slug"
+layout = "passages"
+description = "Viewing blog posts in a specific category."
+is_hidden = 0
+meta_title = "The latest announcements from us"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<?php
+function onStart()
+{
+    $this['bannerImage'] = $this->themeUrl('assets/images/blog-banner.jpg');
+}
+?>
+==
+<div class="row">
+    <div class="col-md-12">
+        {% partial 'blog/posts' %}
+    </div>
+    <div class="col-md-4">
+        {% partial 'blog/categories' %}
+    </div>
+</div>

@@ -1,0 +1,28 @@
+description = "右边框1"
+
+[viewBag]
+
+[blogSeries]
+slug = "gongshi"
+noPostsMessage = "No posts found"
+sortOrder = "published_at asc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<div id="l_container4">
+        <div class="column column7">
+            <div class="column_title">
+                <div class="columntil_l"><span>公示</span></div>
+                <div class="columntil_r"><a class="more_link" href="/notice/public"></a></div>
+            </div>
+            <div class="column_body" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">             
+                    <ul>
+                       {% component 'blogSeries' %}     
+                    </ul>
+            </div>
+            <div class="column_bottom" style="height:5px">
+                <div class="column_bot_l">&nbsp;</div>
+                <div class="column_bot_r">&nbsp;</div>
+            </div>
+        </div>
+</div>

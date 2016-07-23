@@ -1,0 +1,90 @@
+description = "通告公示"
+
+[viewBag]
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 5
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[popularPosts]
+postsLimit = 6
+noPostsMessage = "No posts found"
+postPage = "blog/post"
+==
+<div id="leftbar">
+            <div class="left_nav_con">
+                <div class="left_nav_top">&nbsp;</div>
+
+
+            
+                    
+                        <a href="/notice/public"
+                           class="left_nav">
+                            公示
+                        </a>
+                    
+                        <a href="/notice/lighthouse"
+                           class="left_nav">
+                            曝光台
+                        </a>
+                    
+                        <a href="/notice/msgCollect"
+                           class="left_nav">
+                            调查征集
+                        </a>
+                    
+            
+
+                <div class="left_nav_bot">&nbsp;</div>
+            </div>
+
+            <div class="leftbar_column">
+
+                
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>最新文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                
+                                {% component 'blogPosts' %}
+
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>热门文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                 
+                                 {% component 'popularPosts' %}
+
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            
+
+
+
+            </div>
+
+
+        </div>

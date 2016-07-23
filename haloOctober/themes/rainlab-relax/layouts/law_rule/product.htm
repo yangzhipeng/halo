@@ -1,0 +1,32 @@
+description = "消毒产品管理模板"
+
+[staticMenu]
+
+[staticPage]
+==
+<!DOCTYPE html>
+<html>
+<head>
+    {% partial 'hz_meta_organ'%}
+</head>
+<body>
+
+<div id="main_con">
+        
+        {% partial 'hz_header' %}
+         
+        {% partial 'hz_nav' %}
+         
+        {% partial 'law/law_left' %}
+        
+        {% partial 'law/product_content' %}
+      
+        {% partial 'hz_footer' %}
+     
+</div>
+
+           
+        {% partial 'hz_scripts' %}
+
+</body>
+</html>

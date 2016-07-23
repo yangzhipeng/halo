@@ -1,0 +1,90 @@
+description = "组织机构左边栏"
+
+[viewBag]
+
+[popularPosts]
+postsLimit = 6
+noPostsMessage = "No posts found"
+postPage = "blog/post"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 5
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<div id="leftbar">
+            <div class="left_nav_con">
+                <div class="left_nav_top">&nbsp;</div>
+
+
+            
+                    
+                        <a href="/organization/condition"
+                           class="left_nav">
+                            机构概况
+                        </a>
+                    
+                        <a href="/organization/leadclass"
+                           class="left_nav">
+                            领导班子
+                        </a>
+                    
+                        <a href="/organization/inter_organ"
+                           class="left_nav">
+                            内设科室
+                        </a>
+                    
+                        <a href="/organization/contact"
+                           class="left_nav">
+                            联系方式
+                        </a>
+                    
+            
+
+                <div class="left_nav_bot">&nbsp;</div>
+            </div>
+
+            <div class="leftbar_column">
+
+                
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>最新文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                
+                                   {% component 'blogPosts' %}
+
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>热门文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                
+                                {% component 'popularPosts' %}
+
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>

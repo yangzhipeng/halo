@@ -1,0 +1,84 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ this.page.title }}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--
+New Event
+http://www.templatemo.com/tm-486-new-event
+-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'>
+    <link href="{{ [
+        'assets/css/bootstrap.min.css',
+        'assets/css/animate.css',
+        'assets/css/font-awesome.min.css',
+        'assets/css/owl.theme.css',
+        'assets/css/owl.carousel.css',
+        'assets/css/style.css',
+    ]|theme }}" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
+
+    <div class="preloader">
+        <div class="sk-rotating-plane"></div>
+    </div>
+
+    {% partial 'template/navbar' %}
+    {% partial 'template/intro'  %}
+
+{% if this.theme.settings_overview %}
+    {% partial 'template/overview' %}
+    {% partial 'template/detail'   %}
+    {% partial 'template/video'    %}
+{% endif %}
+
+{% if this.theme.settings_speakers %}
+    {% partial 'template/speakers' %}
+{% endif %}
+
+{% if this.theme.settings_program %}
+    {% partial 'template/program'  %}
+{% endif %}
+
+{% if this.theme.settings_register %}
+    {% partial 'template/register' %}
+    {% partial 'template/faq'      %}
+{% endif %}
+
+{% if this.theme.settings_venue %}
+    {% partial 'template/venue'    %}
+{% endif %}
+
+{% if this.theme.settings_sponsors %}
+    {% partial 'template/sponsors' %}
+{% endif %}
+
+{% if this.theme.settings_contact %}
+    {% partial 'template/contact' %}
+{% endif %}
+
+    {% partial 'template/footer' %}
+
+{% if this.theme.settings_gotop %}
+    <a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+{% endif %}
+
+    <script src="{{ [
+        'assets/js/jquery.js',
+        'assets/js/bootstrap.min.js',
+        'assets/js/jquery.parallax.js',
+        'assets/js/owl.carousel.min.js',
+        'assets/js/smoothscroll.js',
+        'assets/js/wow.min.js',
+        'assets/js/custom.js',
+        '@framework',
+        '@framework.extras']|theme }}"></script>
+
+</body>
+</html>

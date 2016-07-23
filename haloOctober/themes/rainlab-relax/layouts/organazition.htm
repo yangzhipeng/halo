@@ -1,0 +1,35 @@
+description = "党组织机构"
+
+[staticPage]
+
+[staticMenu]
+==
+<!DOCTYPE html>
+<html>
+<head>
+    {% partial 'hz_meta_organ'%}
+</head>
+<body>
+
+<div id="main_con">
+        
+        {% partial 'hz_header_organ' %}
+         
+        {% partial 'hz_nav' %}
+         
+        
+        {% partial 'gov_window/gov_organ' %}
+        
+        {% partial 'gov_window/gov_left' %}
+        
+        {% partial 'gov_window/organ_content' %}
+        
+        {% partial 'hz_footer' %}
+     
+</div>
+
+           
+        {% partial 'hz_scripts' %}
+
+</body>
+</html>

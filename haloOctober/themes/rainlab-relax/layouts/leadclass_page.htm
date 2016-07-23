@@ -1,0 +1,35 @@
+description = "组织机构-领导班子"
+
+[staticMenu]
+
+[staticPage]
+==
+<!DOCTYPE html>
+<html>
+<head>
+    {% partial 'hz_meta_organ'%}
+</head>
+<body>
+
+<div id="main_con">
+        
+        {% partial 'hz_header_organ' %}
+         
+        {% partial 'hz_nav' %}
+         
+        
+        {% partial 'leadclass/hz_leadclass' %}
+        
+        {% partial 'hz_leftbar_organ' %}
+        
+        {% partial 'leadclass/hz_leader' %}
+        
+        {% partial 'hz_footer' %}
+     
+</div>
+
+           
+        {% partial 'hz_scripts' %}
+
+</body>
+</html>

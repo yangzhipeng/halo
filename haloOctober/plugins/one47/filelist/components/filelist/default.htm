@@ -1,0 +1,12 @@
+<div class="row" style="height:0px"></div>
+
+<div class="fl-style">
+    {% if filelist.files|length > 0 %}
+    <ol class="nav nav-pills nav-stacked " style="list-style-type: none; width: 100%; margin 0 auto; ">
+    {% for i, file in filelist.files %}
+      <h3>{{ file.description }}</h3>
+      <li><a href="{{ file.path }}" target="_blank" >{{ file.title }}</a></li>
+    {% endfor %}
+    </ol>
+    {% endif %}
+</div>

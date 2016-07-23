@@ -1,0 +1,35 @@
+description = "公示"
+
+[staticMenu]
+
+[staticPage]
+==
+<!DOCTYPE html>
+<html>
+<head>
+    {% partial 'hz_meta_organ'%}
+</head>
+<body>
+
+<div id="main_con">
+        
+        {% partial 'hz_header_organ' %}
+         
+        {% partial 'hz_nav' %}
+         
+        
+        {% partial 'notice/public' %}
+        
+        {% partial 'notice/tonggao' %}
+        
+        {% partial 'notice/publicity' %}
+        
+        {% partial 'hz_footer' %}
+     
+</div>
+
+           
+        {% partial 'hz_scripts' %}
+
+</body>
+</html>

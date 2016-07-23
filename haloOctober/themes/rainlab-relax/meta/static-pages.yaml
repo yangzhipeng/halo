@@ -1,0 +1,52 @@
+static-pages:
+    about:
+        workstatus-team-2: {  }
+    chairs:
+        chairs-sofas:
+            publicity-publicity-platform: {  }
+            publicity-aa: {  }
+            publicity-publicity-platform-aaa: {  }
+            publicity-publicity-platform-aaaaa: {  }
+        chairs-high-chairs: {  }
+        chairs-rocking-chairs: {  }
+        chairs-wheelchairs: {  }
+    party:
+        party-party-organ: {  }
+    goverment: {  }
+    condition: {  }
+    index: {  }
+    work-dynamic:
+        work-dynamic-jiandu: {  }
+    gov-notice:
+        gov-notice-public: {  }
+        gov-notice-lighthouse: {  }
+        gov-notice-msgCollect: {  }
+    gov_window:
+        gov_window-gov_organ: {  }
+        gov_window-gov_work: {  }
+    organization:
+        organization-condition: {  }
+        organization-leadclass: {  }
+        organization-inter_organ: {  }
+        organization-contact: {  }
+    jiandu:
+        jiandu-zonghe: {  }
+        jiandu-public: {  }
+        jiandu-hospital: {  }
+        jiandu-schoolhealth: {  }
+        jiandu-doctor_handbook: {  }
+        jiandu-other_application: {  }
+        jiandu-rad_medical-2: {  }
+    message:
+        new_message: {  }
+    article: {  }
+    law:
+        law-public_health: {  }
+        law-life_water: {  }
+        law-rad: {  }
+        la-blood: {  }
+        law-illness: {  }
+        law-product_manage: {  }
+        law-nurse_reg: {  }
+        law-school_heal: {  }
+        law-multiple: {  }

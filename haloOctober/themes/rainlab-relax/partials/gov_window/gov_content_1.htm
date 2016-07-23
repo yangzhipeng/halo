@@ -1,0 +1,23 @@
+[blogSeries]
+slug = "party_work"
+noPostsMessage = "No posts found"
+sortOrder = "published_at asc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[viewBag]
+==
+<div id="rightcon">
+            <div class="article_list_con article_list_con-type2">
+                <div class="article_list_title">
+                    <span>
+                     党工作动态 （共 {{ series.postCount }} 篇）
+                     </span>
+                    <a class="more_link" href="/gov_window/gov_work"></a>
+                </div>
+                <div class="article_list_con_body type2">
+                       {% component 'blogSeries' %}
+                </div>
+                <div class="article_list_con_bot"></div>
+            </div>      
+    </div>

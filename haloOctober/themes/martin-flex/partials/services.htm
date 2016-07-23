@@ -1,0 +1,44 @@
+==
+<?php
+function onStart() {
+
+    $this['services'] = [
+        ['id' => 'service-1', 'icon' => 'fa-file-code-o'  , 'title' => 'Responsive'  , 'caption' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.'],
+        ['id' => 'service-2', 'icon' => 'fa-paper-plane-o', 'title' => 'HTML5 CSS3'  , 'caption' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.'],
+        ['id' => 'service-3', 'icon' => 'fa-institution'  , 'title' => 'Web Design'  , 'caption' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.'],
+        ['id' => 'service-4', 'icon' => 'fa-flask'        , 'title' => 'Mobile Ready', 'caption' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet adipscing.'],
+    ];
+
+}
+?>
+==
+<div class="content-section" id="services">
+    <div class="container">
+
+        <div class="row">
+            <div class="heading-section col-md-12 text-center">
+                <h2>Our Services</h2>
+                <p>Let us help you to create professional websites</p>
+            </div>
+        </div>
+
+        <div class="row">
+        {% for service in services %}
+            <div class="col-md-3 col-sm-6">
+                <div class="service-item" id="{{ service['id'] }}">
+                    <div class="service-icon">
+                        <i class="fa {{ service['icon'] }}"></i>
+                    </div>
+                    <div class="service-content">
+                        <div class="inner-service">
+                           <h3>{{ service['title'] }}</h3>
+                           <p>{{ service['caption'] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+
+    </div>
+</div>

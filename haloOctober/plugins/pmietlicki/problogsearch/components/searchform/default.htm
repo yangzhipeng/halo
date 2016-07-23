@@ -1,0 +1,26 @@
+<div class="input-group">
+    <input type="text" name="keyword" class="form-control" id="keyword" value="{{ search_slug }}">
+    <span class="input-group-btn">
+	    <button class="btn btn-default search_now" type="button">
+	    	<span class="icon icon-search"></span>
+	    </button>
+    </span>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#keyword').on('keypress', function (e) {
+    var keyCode = e.which;
+    if (keyCode == 13) {
+        //Trigger click event
+        $('.search_now').trigger('click');
+    }
+	});
+
+    $('.search_now').click(function(){
+        var term = $('#keyword').val();
+        term = term.replace(' ','-');
+        window.location =  "{{ __SELF__.resultPage|page({'filter': 'search', 'slug' : null}) }}" + '/' + term + '/';
+    });
+});
+</script>

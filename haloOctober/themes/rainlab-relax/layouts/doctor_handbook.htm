@@ -1,0 +1,34 @@
+description = "医生手册"
+
+[staticMenu]
+
+[staticPage]
+==
+<!DOCTYPE html>
+<html>
+<head>
+    {% partial 'hz_meta_organ' %}
+</head>
+<body>
+
+<div id="main_con">
+        
+        {% partial 'hz_header' %}
+         
+        {% partial 'hz_nav' %}
+         
+        {% partial 'download/doctor_handbook' %}
+         
+        {% partial 'download/jianduleft' %}
+        
+        {% partial 'download/handbook_content' %}
+      
+        {% partial 'hz_footer' %}
+     
+</div>
+
+           
+        {% partial 'hz_scripts' %}
+
+</body>
+</html>

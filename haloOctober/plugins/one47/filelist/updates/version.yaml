@@ -1,0 +1,10 @@
+1.0.1:
+  - First version of FileList
+  - Create FileLists Table
+  - create_filelists_table.php
+1.0.2:
+  - Fixed an error in the default markup for the component that caused a file to be hidden if their was only one file in the FileList
+  - Changed some of the language to use the backend language
+1.0.3:
+  - Added basic permission function to allow or deny admins to manage filelists
+  - A more specific permission function will be added in the near future 

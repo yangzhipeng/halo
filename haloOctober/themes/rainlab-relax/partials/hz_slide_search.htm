@@ -1,0 +1,73 @@
+description = "轮播和搜索"
+
+[viewBag]
+
+[carousel]
+id = 1
+==
+<div id="slideshow_container">
+        
+            <div id="featured">
+
+
+                <div style="width:618px;height:346px;overflow:hidden;text-overflow:clip;float:left; position:relative">
+                    <div  id="imgtitle" style="position:absolute; font-size:14px; background-color:#000; top:305px; left:1px; width:100%; color:#FFF; height:26px; line-height:26px; text-align:center;filter:alpha(style=1,opacity=90,finishOpacity=90);opacity:0.9;"></div>
+                    <div>
+                        <a id="url" target="_blank">
+                            {% component 'carousel' %}
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+    <div id="l_container1">
+
+        <div id="site_search_con">
+            <form name="searchForm" action="{{ '/search' | app }}" method="get"><div style='display:none'></div>
+                <input name="q" type="text"  placeholder="输入关键字搜索" autocomplete="off" style="height:24px; width:180px;"   /> &nbsp;&nbsp;&nbsp;
+                <button id="site_search_btn" type="submit">站内搜索</button>
+               
+            </form>
+            
+        </div>
+
+        <div class="column column1 banshi">
+            <a href="http://wsbs.huizhou.gov.cn/portal/home.seam">
+            </a>
+                <div class="mid-buttons">
+                    <a href="http://www.huizhou.gov.cn/bsdtWlwzDwList.shtml?kind=zx" target="_blank">我要咨询</a>
+                    <a href="http://www.huizhou.gov.cn/bsdtWspyIndex.shtml" target="_blank">我要评议</a>
+                    <a href="http://59.33.252.235:8899/netapp/queryProcessor.m?queryId=107124&queryType=subSearch&direct=1&sessionId=FIXED441300002net#" target="_blank" class="last-btn">我要查询</a>
+
+                </div>
+<!--             <div class="column_title">
+                <div class="columntil_l"><span>通告公告</span></div>
+                <div class="columntil_r"><a class="more_link" href="/category/?top_ctgy=通告公告"></a></div>
+            </div>
+            <div class="column_body">
+                
+                    <ul>
+                        
+                    </ul>
+                
+                
+            </div>
+            <div class="column_bottom">
+                <div class="column_bot_l">&nbsp;</div>
+                <div class="column_bot_r">&nbsp;</div>
+            </div> -->
+        </div>
+
+    </div>
+    <div class="clear">&nbsp;</div>
+
+    <!-- hide -->
+    <div id="mid_photo" style="display:none;">
+        <div class="mid-buttons">
+            <a href="http://59.33.252.235:8899/netapp/" target="_blank">我要办事</a>
+            <a href="http://59.33.252.235:8899/netapp/queryProcessor.m?queryId=107124&queryType=subSearch&direct=1&sessionId=FIXED441300002net#" target="_blank">我要查询</a>
+            <a href="http://www.huizhou.gov.cn/bsdtWlwzDwList.shtml?kind=zx" target="_blank">我要咨询</a>
+            <a href="http://www.huizhou.gov.cn/bsdtWspyIndex.shtml" target="_blank">我要评议</a>
+        </div>
+    </div>

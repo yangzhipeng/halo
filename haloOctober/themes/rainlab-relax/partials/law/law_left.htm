@@ -1,0 +1,122 @@
+description = "法律法规左侧"
+
+[viewBag]
+
+[popularPosts]
+postsLimit = 6
+noPostsMessage = "No posts found"
+postPage = "blog/post"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 5
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<div id="crumbs">
+            <a href="/">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a
+                href="/law">法律法规</a>
+        </div>
+    
+        <div id="leftbar">
+            <div class="left_nav_con">
+                <div class="left_nav_top">&nbsp;</div>
+                        <a href="/law"
+                           class="left_nav">
+                            医疗机构管理
+                        </a>
+                    
+                        <a href="/law/public_health"
+                           class="left_nav">
+                            公共场所卫生
+                        </a>
+                    
+                        <a href="/law/life_water"
+                           class="left_nav">
+                            生活饮用水卫生
+                        </a>
+                    
+                        <a href="/law/rad"
+                           class="left_nav">
+                            放射诊疗
+                        </a>
+                    
+                        <a href="/law/blood"
+                           class="left_nav">
+                            血液卫生
+                        </a>
+                    
+                        <a href="/law/illness"
+                           class="left_nav">
+                            传染病卫生
+                        </a>
+                    
+                        <a href="/law/product_manage"
+                           class="left_nav">
+                            消毒产品管理
+                        </a>
+                    
+                        <a href="/law/nurse_reg"
+                           class="left_nav">
+                            医师护士注册
+                        </a>
+                    
+                        <a href="/law/school_heal"
+                           class="left_nav">
+                            学校卫生
+                        </a>
+                    
+                        <a href="/law/multiple"
+                           class="left_nav">
+                            综合类
+                        </a>
+                    
+            
+
+                <div class="left_nav_bot">&nbsp;</div>
+            </div>
+            
+             <div class="leftbar_column">
+
+                
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>最新文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                {% component 'blogPosts' %}
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>热门文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                               {% component 'popularPosts' %}
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            
+
+
+
+            </div>
+
+
+        </div>

@@ -1,0 +1,22 @@
+description = "通告公示征集"
+
+[viewBag]
+
+[blogSeries]
+slug = "news"
+noPostsMessage = "No posts found"
+sortOrder = "published_at asc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<div id="rightcon">
+            <div class="article_list_con article_list_con-type2">
+                <div class="article_list_title">
+                    <span>曝光台 （共 {{ series.postCount }} 篇）</span>
+                    <a class="more_link" href="/notice/lighthouse"></a>
+                </div>
+                <div class="article_list_con_body type2"  style="overflow:hidden;">
+                    {% component 'blogSeries' %}
+                </div>
+            </div>         
+    </div>

@@ -1,0 +1,32 @@
+==
+<?php
+function onStart() {
+
+    $this['slides'] = [
+        ['image' => 'slide1.jpg', 'title' => 'Digital Studio'      , 'caption' => 'Let us design your website'           , 'button' => 'Responsive Template', 'link' => '#'],
+        ['image' => 'slide2.jpg', 'title' => 'Responsive Template' , 'caption' => 'Download and use it for your website' , 'button' => 'Go to Portfolio'    , 'link' => '#'],
+        ['image' => 'slide3.jpg', 'title' => 'Professional Quality', 'caption' => 'New standard of web design and coding', 'button' => 'Mobile Website'     , 'link' => '#'],
+    ];
+
+}
+?>
+==
+<div class="site-slider">
+    <div class="slider">
+        <div class="flexslider">
+            <ul class="slides">
+            {% for slide in slides %}
+                <li>
+                    <div class="overlay"></div>
+                    <img src="{{ ('assets/images/' ~ slide['image']) |theme }}" alt="{{ slide['title '] }}">
+                    <div class="slider-caption visible-md visible-lg">
+                        <h2>{{ slide['title']   }}</h2>
+                        <p>{{  slide['caption'] }}</p>
+                        <a href="{{ slide['link'] }}" class="slider-btn">{{ slide['button'] }}</a>
+                    </div>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

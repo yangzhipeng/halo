@@ -1,0 +1,99 @@
+description = "slide ban"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        {% partial 'meta' %}
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+         <link href="{{ [
+      'assets/css/bootstrap.css'
+  ]|theme }}" rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <!-- Top -->
+        <div id="top-nav">
+            <div class="container">
+                <!-- Put anything here, social links? -->
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="layout-header">
+            {% partial "header" %}
+
+            <!-- Nav -->
+            <nav id="layout-nav">
+                {% partial "nav" %}
+            </nav>
+        </header>
+
+        <!-- Content -->
+        <section id="layout-content">
+            <div class="container"  style="height: 900px;overflow: scroll;">
+
+                <div class="visible-xs visible-sm slider-wrapper title-style">
+                    {% partial "title" %}
+                </div>
+
+                <div id="slider-wrapper" class="slider-wrapper hidden-xs hidden-sm">
+                    <div id="slider">
+                        {% for chairPage in chairsPages %}
+                            {# {% set randomImage = random(['sofa', 'cafe', 'in-field', 'wheelchair', 'chairs']) %} #}
+                            {% set randomImage = ['highchair', 'sofa', 'cafe', 'in-field', 'wheelchair', 'chairs', 'lake', 'rocking-chairs'] %}
+                            {% set bannerImage = chairPage.viewBag.banner 
+                                ? chairPage.viewBag.banner|media
+                                : ('assets/images/chairs/'~random(randomImage)~'.jpg')|theme %}
+
+                            <img src="{{ bannerImage }}" alt="" title="" />
+                        {% endfor %}
+                    </div>
+                 <!--    <div id="slider-menu" class="slider-menu">
+                        <ul>
+                            {# {% for chairPage in chairsPages %}#}
+                                <li><a href="{#{{ chairPage.url|app }}#}"><span>{#{{ chairPage.title }}#}</span></a></li>
+                            {#{% endfor %}#}
+                            <li class="desc"><h2><span></span></h2></li>
+                        </ul>
+                    </div>
+                    <div id="slider-text" class="slider-text">
+                        {#{% for chairPage in chairsPages %}#}
+                            <h2>{#{{ chairPage.viewBag.tagline }}#}</h2>
+                        {#{% endfor %}#}
+                    </div>
+                <div class="slider-more-info">
+                       查看所有...
+                    </div>-->
+                
+
+            
+                    <div class="col-sm-10 col-md-12">
+                        <div class="module-home">
+                            {% page  %}
+                            
+                        </div>
+                    </div>
+              
+
+            </div>
+        </section>
+
+        <!-- Slogan -->
+        
+
+
+        <!-- Footer -->
+        <footer>
+            {% partial "footer" %}
+        </footer>
+
+        <!-- Scripts -->
+        {% partial 'scripts' %}
+        <script src="{{ 'assets/javascript/home.js'|theme }}"></script>
+    <script src="{{ [
+      'assets/javascript/bootstrap.js'
+  ]|theme }}" ></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/javascript/bootstrap.min.js"></script>
+    </body>
+</html>

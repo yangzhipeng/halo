@@ -1,0 +1,27 @@
+<div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+                <span class="icon icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">{{ this.theme.settings_brand }}</a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#intro"    class="smoothScroll">Intro</a></li>
+                {% if this.theme.settings_overview  %}<li><a href="#overview" class="smoothScroll">Overview</a></li>{% endif %}
+                {% if this.theme.settings_speakers  %}<li><a href="#speakers" class="smoothScroll">Speakers</a></li>{% endif %}
+                {% if this.theme.settings_program   %}<li><a href="#program"  class="smoothScroll">Programs</a></li>{% endif %}
+                {% if this.theme.settings_register  %}<li><a href="#register" class="smoothScroll">Register</a></li>{% endif %}
+                {% if this.theme.settings_venue     %}<li><a href="#venue"    class="smoothScroll">Venue</a></li>{% endif %}
+                {% if this.theme.settings_sponsors  %}<li><a href="#sponsors" class="smoothScroll">Sponsors</a></li>{% endif %}
+                {% if this.theme.settings_contact   %}<li><a href="#contact"  class="smoothScroll">Contact</a></li>{% endif %}
+            </ul>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                <p class="wow fadeInUp" data-wow-delay="0.6s">{{ this.theme.footer_copyright|raw }}</p>
+                <ul class="social-icon">
+                    {% if this.theme.footer_facebook %}<li><a href="{{ this.theme.footer_facebook_link }}" class="fa fa-facebook    wow fadeInUp" data-wow-delay="1s"  ></a></li>{% endif %}
+                    {% if this.theme.footer_twitter  %}<li><a href="{{ this.theme.footer_twitter_link  }}" class="fa fa-twitter     wow fadeInUp" data-wow-delay="1.3s"></a></li>{% endif %}
+                    {% if this.theme.footer_dribble  %}<li><a href="{{ this.theme.footer_dribble_link  }}" class="fa fa-dribbble    wow fadeInUp" data-wow-delay="1.6s"></a></li>{% endif %}
+                    {% if this.theme.footer_behance  %}<li><a href="{{ this.theme.footer_behance_link  }}" class="fa fa-behance     wow fadeInUp" data-wow-delay="1.9s"></a></li>{% endif %}
+                    {% if this.theme.footer_googlep  %}<li><a href="{{ this.theme.footer_googlep_link  }}" class="fa fa-google-plus wow fadeInUp" data-wow-delay="2s"  ></a></li>{% endif %}
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>

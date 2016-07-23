@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        span: full
+        label: Name
+
+    files:
+        label: Files
+        type: fileupload
+        mode: file

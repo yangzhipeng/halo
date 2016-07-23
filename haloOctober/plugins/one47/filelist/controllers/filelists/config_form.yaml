@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: FileList
+
+# Model Form Field configuration
+form: $/one47/filelist/models/filelist/fields.yaml
+
+# Model Class name
+modelClass: One47\FileList\Models\FileList
+
+# Default redirect location
+defaultRedirect: one47/filelist/filelists
+
+# Create page
+create:
+    title: one47.filelist::lang.filelists.create_filelists
+    redirect: one47/filelist/filelists/update/:id
+    redirectClose: one47/filelist/filelists
+
+# Update page
+update:
+    title: one47.filelist::lang.filelists.update_filelists
+    redirect: one47/filelist/filelists
+    redirectClose: one47/filelist/filelists
+
+# Preview page
+preview:
+    title: one47.filelist::lang.filelists.preview_filelists

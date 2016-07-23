@@ -1,0 +1,46 @@
+title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "passages"
+description = "Viewing a single blog post"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/category"
+
+[postNavigation]
+slug = "{{ :slug }}"
+smallNav = 0
+postPage = "blog/post"
+seriesPage = "blog/category"
+==
+<?php
+function onEnd()
+{
+    /*$this['tagline'] = $this->post->title;*/
+    if (isset($this->post))
+        $this->page->title = $this->post->title;
+    $this['bannerImage'] = $this->themeUrl('assets/images/blog-banner.jpg');
+
+    if ($this->post && $this->post->featured_images->count() > 0) {
+        $this['bannerImage'] = $this->post->featured_images->first()->getPath();
+    }
+}
+?>
+==
+<div class="row">
+    <div class="col-md-12">
+         {% if post %}
+           {% component 'postNavigation' %}
+         <h2>{{ post.title }}</h2>
+         {% component 'blogPost' %}
+       
+         {% else %}
+         <h2>Post not found</h2>
+         {% endif %}
+{#        {% component 'blogPost' %}#}
+    </div>
+    <div class="col-md-4">
+        {% partial 'blog/categories' %}
+    </div>
+</div>

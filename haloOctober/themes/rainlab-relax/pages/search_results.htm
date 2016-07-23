@@ -1,0 +1,14 @@
+title = "搜索结果"
+url = "/search"
+layout = "search"
+is_hidden = 0
+
+[searchResults]
+resultsPerPage = 5
+showProviderBadge = 0
+noResultsMessage = "你要查找的信息不存在噢！"
+visitPageMessage = "浏览页面"
+==
+<h2>你要查找的关键字是： {{ searchResults.query }}</h2>
+<hr/>
+{% component 'searchResults' %}

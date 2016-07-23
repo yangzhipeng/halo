@@ -1,0 +1,343 @@
+name: 'New Event'
+author: Martin M.
+description: 'New Event is a fully responsive one-page template for events, conferences or workshops. This is Bootstrap v3.3.6 parallax layout. Contents are organized in carousel, tabs, and accordion created by Templatemo.'
+homepage: 'http://www.templatemo.com/tm-486-new-event'
+code: 'New-Event'
+
+
+form:
+    tabs:
+        fields:
+
+            ###################################################################
+            # THEME SETTINGS
+            ###################################################################
+            settings_brand:
+                tab    : Settings
+                label  : Brand
+                type   : text
+                default: New Event
+                span   : left
+            settings_gotop:
+                tab    : Settings
+                label  : Display "Go Top" button
+                type   : switch
+                default: true
+            settings_enabled_sections:
+                tab    : Settings
+                label  : Enabled Sections
+                type   : section
+            settings_overview:
+                tab    : Settings
+                label  : Overview
+                type   : switch
+                default: true
+            settings_speakers:
+                tab    : Settings
+                label  : Speakers
+                type   : switch
+                default: true
+            settings_program:
+                tab    : Settings
+                label  : Program
+                type   : switch
+                default: true
+            settings_register:
+                tab    : Settings
+                label  : Register
+                type   : switch
+                default: true
+            settings_venue:
+                tab    : Settings
+                label  : Venue
+                type   : switch
+                default: true
+            settings_sponsors:
+                tab    : Settings
+                label  : Sponsors
+                type   : switch
+                default: true
+            settings_contact:
+                tab    : Settings
+                label  : Contact
+                type   : switch
+                default: true
+
+            ###################################################################
+            # partials/template/intro.htm
+            ###################################################################
+            intro_line1:
+                tab    : Intro
+                label  : Line 1
+                type   : text
+                default: July 22 - 26 in San Francisco, CA
+            intro_line2:
+                tab    : Intro
+                label  : Line 2
+                type   : text
+                default: July Web Design Conference
+
+            ###################################################################
+            # partials/template/overview.htm
+            ###################################################################
+            overview_title:
+                tab    : Overview
+                label  : Title
+                type   : text
+                default: New Event is a fully responsive one-page template for events, conferences or workshops.
+            overview_content:
+                tab    : Overview
+                label  : Content
+                type   : textarea
+                size   : large
+                default: >
+                        This is a Bootstrap v3.3.6 layout that is responsive and mobile friendly. You may download and modify this template for your website. Please tell your friends about templatemo.
+
+                        Quisque facilisis scelerisque venenatis. Nam vulputate ultricies luctus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+
+            ###################################################################
+            # partials/template/detail.htm
+            ###################################################################
+            detail_box1:
+                tab    : Detail
+                label  : Box 1
+                type   : section
+            detail_box1_icon:
+                tab    : Detail
+                label  : Icon
+                type   : text
+                span   : left
+                default: fa-group
+            detail_box1_title:
+                tab    : Detail
+                label  : Title
+                type   : text
+                span   : right
+                default: 650 Participants
+            detail_box1_content:
+                tab    : Detail
+                label  : Content
+                type   : text
+                default: Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.
+            detail_box2:
+                tab    : Detail
+                label  : Box 2
+                type   : section
+            detail_box2_icon:
+                tab    : Detail
+                label  : Icon
+                type   : text
+                span   : left
+                default: fa-clock-o
+            detail_box2_title:
+                tab    : Detail
+                label  : Title
+                type   : text
+                span   : right
+                default: 24 Programs
+            detail_box2_content:
+                tab    : Detail
+                label  : Content
+                type   : text
+                default: Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.
+            detail_box3:
+                tab    : Detail
+                label  : Box 3
+                type   : section
+            detail_box3_icon:
+                tab    : Detail
+                label  : Icon
+                type   : text
+                span   : left
+                default: fa-microphone
+            detail_box3_title:
+                tab    : Detail
+                label  : Title
+                type   : text
+                span   : right
+                default: 11 Speakers
+            detail_box3_content:
+                tab    : Detail
+                label  : Content
+                type   : text
+                default: Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.
+
+            ###################################################################
+            # partials/template/video.htm
+            ###################################################################
+            video_header:
+                tab    : Video
+                label  : Header
+                type   : text
+                default: Watch Video
+            video_subheader:
+                tab    : Video
+                label  : Sub Header
+                type   : text
+                default: Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.
+            video_content:
+                tab    : Video
+                label  : Content
+                type   : text
+                default: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.
+            video_youtube:
+                tab    : Video
+                label  : YouTube URL
+                type   : text
+                default: https://www.youtube.com/embed/XDPwXQjAlB0
+
+            ###################################################################
+            # partials/template/speakers.htm
+            ###################################################################
+            speakers:
+                tab    : "* Speakers"
+                label  : There is no settings for this area. Please, edit the partial from CMS section.
+                type   : section
+
+            ###################################################################
+            # partials/template/program.htm
+            ###################################################################
+            program:
+                tab    : "* Programs"
+                label  : There is no settings for this area. Please, edit the partial from CMS section.
+                type   : section
+
+            ###################################################################
+            # partials/template/register.htm
+            ###################################################################
+            register_header:
+                tab    : Register
+                label  : Header
+                type   : text
+                default: Register Here
+            register_subheader:
+                tab    : Register
+                label  : Sub Header
+                type   : text
+                default: Nunc eu nibh vel augue mollis tincidunt id efficitur tortor. Sed pulvinar est sit amet tellus iaculis hendrerit.
+            register_content:
+                tab    : Register
+                label  : Content
+                type   : text
+                default: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet consectetuer diam nonummy.
+
+            ###################################################################
+            # partials/template/faq.htm
+            ###################################################################
+            faq:
+                tab    : "* FAQ"
+                label  : There is no settings for this area. Please, edit the partial from CMS section.
+                type   : section
+
+            ###################################################################
+            # partials/template/venue.htm
+            ###################################################################
+            venue:
+                tab    : "* Venue"
+                label  : There is no settings for this area. Please, edit the partial from CMS section.
+                type   : section
+
+            ###################################################################
+            # partials/template/sponsors.htm
+            ###################################################################
+            sponsors:
+                tab    : "* Sponsors"
+                label  : There is no settings for this area. Please, edit the partial from CMS section.
+                type   : section
+
+            ###################################################################
+            # partials/template/contact.htm
+            ###################################################################
+            contact:
+                tab    : "* Contact"
+                label  : There is no settings for this area. Please, edit the partial from CMS section.
+                type   : section
+
+            ###################################################################
+            # partials/template/footer.htm
+            ###################################################################
+            footer_copyright:
+                tab    : Footer
+                label  : Copyright
+                type   : text
+                default: Copyright &copy; 2016 Your Company | Design <a rel="nofollow" href="http://www.templatemo.com/page/1" target="_parent">Templatemo</a>
+            footer_facebook:
+                tab    : Footer
+                label  : Facebook
+                type   : switch
+                default: true
+                span   : left
+            footer_facebook_link:
+                tab    : Footer
+                label  : Facebook Link
+                type   : text
+                default: "#"
+                span   : right
+                trigger:
+                    action   : show
+                    field    : footer_facebook
+                    condition: checked
+            footer_twitter:
+                tab    : Footer
+                label  : Twitter
+                type   : switch
+                default: true
+                span   : left
+            footer_twitter_link:
+                tab    : Footer
+                label  : Twitter Link
+                type   : text
+                default: "#"
+                span   : right
+                trigger:
+                    action   : show
+                    field    : footer_twitter
+                    condition: checked
+            footer_dribble:
+                tab    : Footer
+                label  : Dribble
+                type   : switch
+                default: true
+                span   : left
+            footer_dribble_link:
+                tab    : Footer
+                label  : Dribble Link
+                type   : text
+                default: "#"
+                span   : right
+                trigger:
+                    action   : show
+                    field    : footer_dribble
+                    condition: checked
+            footer_behance:
+                tab    : Footer
+                label  : Behance
+                type   : switch
+                default: true
+                span   : left
+            footer_behance_link:
+                tab    : Footer
+                label  : Behance Link
+                type   : text
+                default: "#"
+                span   : right
+                trigger:
+                    action   : show
+                    field    : footer_behance
+                    condition: checked
+            footer_googlep:
+                tab    : Footer
+                label  : Google Plus
+                type   : switch
+                default: true
+                span   : left
+            footer_googlep_link:
+                tab    : Footer
+                label  : Google Plus Link
+                type   : text
+                default: "#"
+                span   : right
+                trigger:
+                    action   : show
+                    field    : footer_googlep
+                    condition: checked

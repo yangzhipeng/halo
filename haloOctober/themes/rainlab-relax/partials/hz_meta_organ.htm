@@ -1,0 +1,19 @@
+description = "组织机构样式"
+
+[viewBag]
+==
+<meta charset="utf-8">
+<title>惠州卫生监督信息网 - {{ this.page.title }}</title>
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="title" content="{{ this.page.meta_title }}">
+<meta name="author" content="OctoberCMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="generator" content="OctoberCMS" />
+{% styles %}
+
+<link rel="shortcut icon" href="../themes/rainlab-relax/assets/images/favicon.ico">
+<link href="{{ [
+       'assets/css/huizhou_common.css',
+       'assets/css/huizhou_subpage.css',
+  ]|theme }}" rel="stylesheet" />

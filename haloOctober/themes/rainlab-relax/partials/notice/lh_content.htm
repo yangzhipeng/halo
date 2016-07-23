@@ -1,0 +1,27 @@
+[staticMenu]
+
+[staticPage]
+
+[blogSeries]
+slug = "news"
+noPostsMessage = "No posts found"
+sortOrder = "published_at asc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[viewBag]
+==
+<div id="rightcon">
+        <div class="article_list_con">
+            <div class="article_list_title">
+                <span>
+                 曝光台 （共 {{ series.postCount }} 篇）
+                </span>
+            </div>
+            <div class="article_list_con_body" style="overflow:hidden;">
+                  {% component 'blogSeries' %}
+            </div>
+            </div>
+        </div>
+
+<div class="clear">&nbsp;</div>

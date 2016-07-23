@@ -1,0 +1,20 @@
+title = "Articles"
+url = "/a"
+layout = "work_dynamic"
+description = "惠州卫生局"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+<!--<div>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最受欢迎文章
+<ol>
+</ol>
+</p>-->
+{% component 'blogPosts' %}

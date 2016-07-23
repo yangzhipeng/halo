@@ -1,0 +1,67 @@
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 5
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[popularPosts]
+postsLimit = 6
+noPostsMessage = "No posts found"
+postPage = "blog/post"
+
+[viewBag]
+==
+<div id="leftbar">
+            <div class="left_nav_con">
+                <div class="left_nav_top">&nbsp;</div>
+
+                        <a href="/gov_window/gov_organ"
+                           class="left_nav">
+                            党组织机构
+                        </a>
+                    
+                        <a href="/gov_window/gov_work"
+                           class="left_nav">
+                            党工作动态
+                        </a>
+                <div class="left_nav_bot">&nbsp;</div>
+            </div>
+
+            <div class="leftbar_column">
+
+                
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>最新文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                {% component 'blogPosts' %}
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+            
+                    <div class="column column1">
+                        <div class="column_title">
+                            <div class="columntil_l"><span>热门文章</span></div>
+                            <div class="columntil_r"></div>
+                        </div>
+                        <div class="column_body">
+                            <ul>
+                                {% component 'popularPosts' %}
+                            </ul>
+                        </div>
+                        <div class="column_bottom">
+                            <div class="column_bot_l">&nbsp;</div>
+                            <div class="column_bot_r">&nbsp;</div>
+                        </div>
+                    </div>
+                 </div>
+        </div>

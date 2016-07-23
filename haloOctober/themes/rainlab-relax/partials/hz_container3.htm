@@ -1,0 +1,39 @@
+description = "中间框"
+
+[viewBag]
+
+[blogSeries]
+slug = "clean"
+noPostsMessage = "No posts found"
+sortOrder = "published_at asc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+
+[staticMenu]
+
+[staticPage]
+==
+<div id="l_container3">
+        <div class="column column5">
+            <div class="column_title">
+                <div class="columntil_l"><span>工作动态</span></div>
+                <div class="columntil_r"><a class="more_link" href="/work/dynamic"></a></div>
+            </div>
+            <div class="column_body" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+                
+                    <ul>
+                        
+                            {% component 'blogSeries' %}
+                    </ul>
+                
+
+                
+            </div>
+
+            <div class="column_bottom">
+                <div class="column_bot_l">&nbsp;</div>
+                <div class="column_bot_r">&nbsp;</div>
+            </div>
+        </div>
+
+    </div>

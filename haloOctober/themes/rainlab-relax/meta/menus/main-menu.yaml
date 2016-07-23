@@ -1,0 +1,249 @@
+name: 导航菜单
+items:
+    -
+        title: 首页
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: article
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 组织机构
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: organizations-2
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 机构概况
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: organizations-organ-situation
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 领导班子
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: organizations-leader
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 内设科室
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: organizations-Internal-department
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 联系方式
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: organizations-contact_way
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: 工作动态
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: about
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 通告公示
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: chairs
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 曝光台
+                type: url
+                url: 'http://localhost:8000/publicity/publicity-platform'
+                code: ''
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 公示
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: chairs-high-chairs
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: 党建之窗
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: party
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 党组织机构
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: party-party-organ
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: 公开信息
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: goverment
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 办事指南
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: guide
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 消息盒
+        nesting: '0'
+        type: static-page
+        url: ''
+        code: ''
+        reference: info_box
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 群众留言
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: info_box-people
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 所长信箱
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: info_box-Director_box
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 征集调查
+                nesting: '0'
+                type: static-page
+                url: ''
+                code: ''
+                reference: info_box-survey_collection
+                cmsPage: ''
+                replace: '0'
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: 下载
+        nesting: ''
+        type: cms-page
+        url: ''
+        code: ''
+        reference: download-pdf
+        cmsPage: ''
+        replace: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
